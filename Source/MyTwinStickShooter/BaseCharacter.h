@@ -15,11 +15,11 @@ public:
 
 	// Make a health property
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "BaseCharacter")
-		float Health = 100;
+	float Health = 100;
 
 	// Make a isDead property
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "BaseCharacter")
-		bool isDead = false;
+	bool isDead = false;
 
 
 	// Calculate death function (helper)
@@ -27,7 +27,7 @@ public:
 
 	// Calculate heath function
 	UFUNCTION(BlueprintCallable, Category = "BaseCharacter")
-		virtual void CalculateHealth(float delta);
+	virtual void CalculateHealth(float delta);
 
 
 	// Editor-centric code for changeing properies
